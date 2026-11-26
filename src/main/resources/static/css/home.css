@@ -1,0 +1,186 @@
+body {
+    background-color: #0f1220;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-container {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+#saudacao {
+    margin: 0 0 5px 0;
+}
+
+.data-hoje {
+    margin: 0 0 25px 0;
+    color: #9aa3c7;
+    text-transform: capitalize;
+}
+
+/* Cards de resumo */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card-resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border: 1px solid #3d4373;
+    border-radius: 20px;
+    background-color: #1c2038;
+}
+
+.card-rotulo {
+    color: #9aa3c7;
+    font-size: 0.9em;
+}
+
+.card-numero {
+    color: #8b5cf6;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+/* Bloco da lista */
+.bloco-topo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bloco-topo h3 {
+    margin: 0;
+}
+
+.botao-novo {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-novo:hover {
+    background-color: #7c3aed;
+}
+
+/* Tabela */
+.tabela-container {
+    overflow-x: auto;
+    border: 1px solid #32385f;
+    border-radius: 15px;
+    background-color: #161a2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #2a3050;
+}
+
+th {
+    background-color: #1c2038;
+    color: #8b5cf6;
+    font-size: 0.9em;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #1c2038;
+}
+
+td.vazio {
+    text-align: center;
+    color: #9aa3c7;
+    padding: 30px;
+}
+
+/* Selo de status */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-agendado     { background-color: #0ea5e9; }
+.status-em_andamento { background-color: #f59e0b; }
+.status-concluido    { background-color: #10b981; }
+.status-cancelado    { background-color: #e11d48; }
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    min-height: 1.2em;
+    color: #fb7185;
+}
+
+/* Botões das salas */
+main:has(> .salas) {
+    flex: 1;                   /* ocupa o resto da altura da tela */
+    display: flex;
+}
+
+.salas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;    /* uma em cima da outra */
+    justify-content: center;   /* centraliza na vertical */
+    align-items: center;       /* centraliza na horizontal */
+    gap: 20px;
+}
+
+.botao-sala {
+    display: block;
+    width: 240px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #1c2038;
+    border: 1px solid #3d4373;
+    border-radius: 20px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.botao-sala:hover {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+}

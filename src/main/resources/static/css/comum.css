@@ -1,0 +1,33 @@
+/* Estilos compartilhados por todas as telas: mensagens e erros de formulário */
+
+#mensagem.erro   { color: #fb7185; }
+#mensagem.sucesso { color: #34d399; }
+
+/* Mensagem de erro logo abaixo do campo com problema */
+.erro-campo {
+    display: block;
+    color: #fb7185;
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+input.invalido,
+select.invalido,
+.opcoes-servico.invalido {
+    border-color: #fb7185 !important;
+}
+
+/* Campos <select> com o mesmo visual dos <input> escuros */
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.link-voltar {
+    align-self: center;
+    margin-top: 15px;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Item ativo do menu e botão Sair ficam no header.css */

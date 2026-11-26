@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Login - DataCenter</title>
+</head>
+
+<body>
+    <header>
+        <h1>DataCenter</h1>
+    </header>
+
+    <main>
+        <form id="loginForm">
+            <h3>Login</h3>
+
+            <section class="section-email">
+                <label for="email">E-mail:<br></label>
+                <input type="text" id="email" name="email" required autocomplete="username" placeholder="seuemail@email.com">
+            </section>
+
+            <section class="section-senha">
+                <label for="senha">Senha:<br></label>
+                <input type="password" id="senha" name="senha" required autocomplete="current-password" placeholder="********">
+            </section>
+
+            <button type="submit" id="botao-login">Login</button>
+
+            <p id="mensagem"></p>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.titulo-sala {
+    border-bottom-color: #f59e0b;
+}
+
+.botao-sala:hover,
+.botao-sala:focus-visible {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    color: #1a1a1a;
+}

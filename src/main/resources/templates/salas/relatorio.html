@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/header.css">
+    <link rel="stylesheet" href="../../static/css/home.css">
+    <link rel="stylesheet" href="../../static/css/relatorio.css">
+    <link rel="stylesheet" href="../../static/css/comum.css">
+    <title>Relatório de Acessos</title>
+
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <div class="bloco-topo">
+            <h2 id="titulo-relatorio">Relatório de Acessos</h2>
+            <a href="../home.html" class="botao-novo" id="botao-voltar">Voltar</a>
+        </div>
+
+        <!-- Cards de resumo -->
+        <div class="cards">
+            <div class="card-resumo">
+                <span class="card-rotulo">Total de acessos</span>
+                <span class="card-numero" id="total">0</span>
+            </div>
+            <div class="card-resumo">
+                <span class="card-rotulo">Permitidos</span>
+                <span class="card-numero numero-permitido" id="total-permitidos">0</span>
+            </div>
+            <div class="card-resumo">
+                <span class="card-rotulo">Negados</span>
+                <span class="card-numero numero-negado" id="total-negados">0</span>
+            </div>
+        </div>
+
+        <!-- Filtro -->
+        <div class="bloco-topo">
+            <h3>Registros</h3>
+            <select id="filtro-resultado" aria-label="Filtrar por resultado">
+                <option value="">Todos os resultados</option>
+                <option value="permitido">Permitidos</option>
+                <option value="negado">Negados</option>
+            </select>
+        </div>
+
+        <!-- Tabela -->
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data e hora</th>
+                        <th>Usuário</th>
+                        <th>Login</th>
+                        <th>Tipo</th>
+                        <th>Movimento</th>
+                        <th>Resultado</th>
+                        <th>Motivo da negação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-acessos">
+                    <tr><td class="vazio" colspan="7">Carregando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <script src="../../static/js/header.js"></script>
+    <script src="../../static/js/relatorio.js"></script>
+</body>
+</html>

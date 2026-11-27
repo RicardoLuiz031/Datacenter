@@ -1,0 +1,39 @@
+main {
+    max-width: 1200px;
+}
+
+/* Selo de resultado (usa a base .status do home.css) */
+.status-permitido { background-color: #10b981; }
+.status-negado    { background-color: #e11d48; }
+
+.numero-permitido { color: #10b981; }
+.numero-negado    { color: #fb7185; }
+
+/* Filtro com o mesmo visual dos inputs escuros */
+#filtro-resultado {
+    padding: 10px 14px;
+    border: 1px solid #3d4373;
+    border-radius: 10px;
+    background-color: #12152a;
+    color: white;
+}
+
+#filtro-resultado:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+#mensagem.erro { color: #fb7185; }
+
+/* Tabela larga: o container já rola na horizontal */
+table {
+    min-width: 900px;
+}
+
+td.capitalizar {
+    text-transform: capitalize;
+}
+
+td.motivo {
+    color: #9aa3c7;
+}

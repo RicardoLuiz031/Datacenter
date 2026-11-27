@@ -1,0 +1,13 @@
+/* Complemento do home.css para as telas das salas (servidor, rede e energia). */
+
+.titulo-sala {
+    margin: 0 0 10px 0;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 3px solid #8b5cf6;
+}
+
+button.botao-sala {
+    font-family: inherit;
+    cursor: pointer;
+}

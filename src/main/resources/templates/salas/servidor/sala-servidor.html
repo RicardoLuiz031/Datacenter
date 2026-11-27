@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../static/css/header.css">
-    <link rel="stylesheet" href="../../../static/css/home.css">
-    <link rel="stylesheet" href="../../../static/css/sala.css">
-    <link rel="stylesheet" href="../../../static/css/servidor.css">
-    <link rel="stylesheet" href="../../../static/css/comum.css">
-    <title>Sala de Servidor</title>
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Sala do Servidor</title>
 
+    <script src="../static/js/auth.js"></script>
 </head>
 <body>
+    <div id="header-container"></div>
 
     <main>
-        <div class="salas">
-            <h2 class="titulo-sala">Sala de Servidor</h2>
-            <button type="button" class="botao-sala" id="botao-entrar">Entrar na sala</button>
-            <button type="button" class="botao-sala botao-sair-sala" id="botao-sair-sala">Sair da sala</button>
-            <button type="button" class="botao-sala" id="botao-relatorio">Gerar relatório</button>
-        </div>
+        
     </main>
 
-    <script>
-        document.getElementById("botao-relatorio").addEventListener("click", () => {
-            location.href = "../relatorio.html?sala=servidor";
-        });
-    </script>
+    <script src="../static/js/header.js"></script>
 </body>
 </html>

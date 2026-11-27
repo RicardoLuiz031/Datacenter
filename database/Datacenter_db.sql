@@ -23,7 +23,7 @@ CREATE TABLE Acesso(
     resultado enum("permitido" , "negado"),
     motivo_negacao text,
     id_Usuarios int not null,
-    FOREIGN KEY(id_Usuarios) REFERENCES Usuarios (id_Usuarios)
+    FOREIGN(id_Usuarios) REFERENCES Usuarios (id_Usuarios)
 );
 
 CREATE TABLE Autorizacoes_visitantes(

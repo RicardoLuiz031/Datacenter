@@ -16,8 +16,22 @@
             <a href="./salas/servidor/sala-servidor.html" class="botao-sala">Sala de Servidor</a>
             <a href="./salas/rede/sala-rede.html" class="botao-sala">Sala de Rede</a>
             <a href="./salas/energia/sala-energia.html" class="botao-sala">Sala de Energia</a>
+
+            <!-- Só aparece para administrador (veja o script abaixo) -->
+            <a href="./dar-acesso-visitante.html" class="botao-sala" id="link-dar-acesso" hidden>Dar acesso a visitante</a>
         </div>
     </main>
 
+    <script>
+        // Mostra o link apenas se o usuário logado for administrador.
+        // Isto é só visual: o backend também precisa barrar quem não é admin.
+        document.addEventListener("DOMContentLoaded", () => {
+            const usuario = typeof getUsuario === "function" ? getUsuario() : null;
+            const perfil = String((usuario && (usuario.perfil || usuario.tipoUsuario)) || "").toUpperCase();
+            if (perfil === "ADMIN" || perfil === "ADMINISTRADOR") {
+                document.getElementById("link-dar-acesso").hidden = false;
+            }
+        });
+    </script>
 </body>
 </html>
